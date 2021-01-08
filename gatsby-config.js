@@ -6,7 +6,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-google-analytics",
       options: {
-        trackingId: "",
+        trackingId: "6757",
       },
     },
     "gatsby-plugin-sharp",
@@ -38,5 +38,13 @@ module.exports = {
       },
       __key: "pages",
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `data`,
+        path: `./src/data/`,
+      },
+    },
+    `gatsby-transformer-csv`,
   ],
 };
