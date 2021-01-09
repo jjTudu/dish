@@ -1,12 +1,7 @@
 import React from "react"
 
-import { Stack, Main, Sidebar } from '@layout'
-import PageTitle from '@components/PageTitle'
-import Divider from '@components/Divider'
-import Seo from '@widgets/Seo'
-import ContactForm from '@widgets/ContactForm'
-import ContactInfo from '@widgets/ContactInfo'
-import Commitment from '@widgets/Commitment'
+//import { Stack, Main, Sidebar } from 'layout'
+
 
 
 import Header from "../header"
