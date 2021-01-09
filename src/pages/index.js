@@ -7,10 +7,15 @@ import SEO from "../components/seo"
 export default () => (
   <StaticQuery
     query={graphql`
-      query FoodReceipe {
-        allIndianFoodDatasetCsv {          
+      {
+        completelist: allIndianFoodDatasetCsv {          
             ...IndianFoodDatasetCsvConnectionFragment          
         }
+
+        distinctCourse:allIndianFoodDatasetCsv {
+          distinct(field: Course)
+        }
+
       }
     `}
     render={data => <IndexPage data={data} />}
@@ -20,11 +25,13 @@ export default () => (
 const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Home" />
+
+
     <h1>Using a CSV as a data source in Gatsby</h1>
     <p>These people were found in the CSV file.</p>
     <ul>
-      {data.allIndianFoodDatasetCsv.nodes.length > 0 &&
-        data.allIndianFoodDatasetCsv.nodes.map(receipe => (
+      {data.completelist.nodes.length > 0 &&
+        data.completelist.nodes.map(receipe => (
           <li>
             <Link to={`/receipe/${receipe.Srno}-${receipe.TotalTimeInMins}-${receipe.RecipeName}`}>
               {receipe.RecipeName}
@@ -32,5 +39,7 @@ const IndexPage = ({ data }) => (
           </li>
         ))}
     </ul>
+
+
   </Layout>
 )
