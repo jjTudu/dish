@@ -11,14 +11,14 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import "./layout.css"
-import "./css/form.css"
-import "./css/font-awesome.css"
-import "./css/grid.css"
-import "./css/ie.css"
-import "./css/stuck.css"
-import "./css/style.css" 
-import "./css/superfish.css" 
-import "./css/touchTouch.css"
+import "../styles/css/form.css"
+import "../styles/css/font-awesome.css"
+import "../styles/css/grid.css"
+import "../styles/css/ie.css"
+import "../styles/css/stuck.css"
+import "../styles/css/style.css" 
+import "../styles/css/superfish.css" 
+import "../styles/css/touchTouch.css"
  
 
 const Layout = ({ children }) => {

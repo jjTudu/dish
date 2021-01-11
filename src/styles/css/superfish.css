@@ -102,7 +102,7 @@ nav {
 	background-color: #343434;
 	top: 55px;
 	padding-bottom: 1px;
-	background: #1f1714 url(../../images/sub_bg.png) 0 0 repeat-x;
+	background: #1f1714 url(../../../static/sub_bg.png) 0 0 repeat-x;
 }
 
 
@@ -111,7 +111,7 @@ nav {
 	position: relative;
 	padding-top: 2px;
 	float: none !important;
-	background: url(../../images/sub_sep.png) 0 0 repeat-x;
+	background: url(../../../static/sub_sep.png) 0 0 repeat-x;
 }
 
 

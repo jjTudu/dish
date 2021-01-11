@@ -112,7 +112,7 @@ ul {
     font-size: 16px;
     color: #535151;
     padding-left: 22px;
-    background: url(../../images/marker.png) 0 9px no-repeat;
+    background: url(../../../static/marker.png) 0 9px no-repeat;
 }
 
 .list li+li {
@@ -361,7 +361,7 @@ header h1 a img {
     padding: 6px 0 18px;
     width: 194px;
     margin: 0 auto 2px;
-    background: url(../../images/bann_sep.png) 0 bottom repeat-x;
+    background: url(../../../static/bann_sep.png) 0 bottom repeat-x;
 }
 
 .bann_capt  a {
@@ -408,7 +408,7 @@ header h1 a img {
 }
 
 .bq1 {
-    background: url(../../images/quotes.png) right 0 no-repeat;
+    background: url(../../../static/quotes.png) right 0 no-repeat;
     margin-top: -37px;
     padding-top: 12px;
     overflow: hidden;
@@ -565,7 +565,7 @@ header h1 a img {
 
 .gall_item {
     display: block;
-    background: #aaccaa url(../../images/magnify.png) center center no-repeat;
+    background: #aaccaa url(../../../static/magnify.png) center center no-repeat;
 }
 
 .gall_item img {
@@ -776,7 +776,7 @@ header h1 a img {
     border: none;
     text-indent: -999px;
     z-index: 20;
-    background: url(../../images/totop.png) no-repeat left 0; 
+    background: url(../../../static/totop.png) no-repeat left 0; 
     transition: 0s ease;
     -o-transition: 0s ease;
     -webkit-transition: 0s ease;

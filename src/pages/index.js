@@ -2,6 +2,12 @@ import React, { useLayoutEffect, useEffect, useState } from 'react'
 import { StaticQuery, graphql, Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import icon2 from "../../static/icon2.png"
+import icon1 from "../../static/icon1.png"
+import icon3 from "../../static/icon3.png"
+import page1_img2 from "../../static/page1_img2.jpg"
+import page1_img1 from "../../static/page1_img1.jpg"
+import page1_img3 from "../../static/page1_img3.jpg"
 
 
 function shuffleArray(array) {
@@ -59,12 +65,12 @@ const IndexPage = ({ data }) => (
               <div class="gall_block">
                 <div class="bann_capt  bn__1">
                   <div class="maxheight">
-                    <img src="images/icon2.png" alt="" />
+                    <img src={icon2} alt="" />
                     <div class="bann_title">{course}</div>
                     <a href="#">more</a>
                   </div>
                 </div>
-                <img src="images/page1_img2.jpg" alt="" />
+                <img src={page1_img2} alt="" />
               </div>
             </div>
           </div>) 
@@ -73,10 +79,14 @@ const IndexPage = ({ data }) => (
             <div class="banner">
               <div class="gall_block">
 
-                <img src="images/page1_img1.jpg" alt="" />
+                {(index===0)
+                ?<img src={page1_img1} alt="" />
+                :<img src={page1_img3} alt="" />}
                 <div class="bann_capt ">
                   <div class="maxheight">
-                    <img src="images/icon1.png" alt="" />
+                    {(index===0)
+                    ?<img src={icon1} alt="" />
+                    :<img src={icon3} alt="" />}
                     <div class="bann_title">{course}</div>
                     <a href="#">more</a>
                   </div>
@@ -84,64 +94,10 @@ const IndexPage = ({ data }) => (
 
               </div>
             </div>
-          </div>);          
-        
-        }                
-             
+          </div>);  
+        }    
           )
         }
-
-
-        <div class="grid_4">
-          <div class="banner">
-            <div class="gall_block">
-              <img src="images/page1_img1.jpg" alt="" />
-              <div class="bann_capt ">
-                <div class="maxheight">
-                  <img src="images/icon1.png" alt="" />
-                  <div class="bann_title">Traditional Cuisine</div>
-                  <a href="#">more</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="grid_4">
-          <div class="banner">
-            <div class="gall_block">
-              <div class="bann_capt  bn__1">
-                <div class="maxheight">
-                  <img src="images/icon2.png" alt="" />
-                  <div class="bann_title">Kid’s &amp; Vegan Menu</div>
-                  <a href="#">more</a>
-                </div>
-              </div>
-              <img src="images/page1_img2.jpg" alt="" />
-            </div>
-          </div>
-        </div>
-
-
-        <div class="grid_4">
-          <div class="banner ">
-            <div class="gall_block">
-              <img src="images/page1_img3.jpg" alt="" />
-              <div class="bann_capt  bn__2">
-                <div class="maxheight">
-                  <img src="images/icon3.png" alt="" />
-                  <div class="bann_title">Happy Hours <br /> &amp; Offers</div>
-                  <a href="#">more</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-
-
-
 
 
         <div class="grid_4">
